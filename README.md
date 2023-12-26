@@ -21,7 +21,7 @@ This example demonstrates how to handle these events to implement similar restri
 
 ## Files to Review
 
-- [MainWindow.xaml.cs](./CS/WinApp7/Form1.Designer.cs) (VB: [MainWindow.xaml.vb](./VB/WinApp7/Form1.Designer.vb))
+- [Form1.Designer.cs](./CS/WinApp7/Form1.Designer.cs) (VB: [Form1.Designer.vb](./VB/WinApp7/Form1.Designer.vb))
 
 ## Documentation
 
