@@ -21,7 +21,7 @@ This example demonstrates how to handle these events to implement similar restri
 
 ## Files to Review
 
-- [Form1.Designer.cs](./CS/WinApp7/Form1.Designer.cs) (VB: [Form1.Designer.vb](./VB/WinApp7/Form1.Designer.vb))
+- [Form1.cs](./CS/WinApp7/Form1.cs) (VB: [Form1.vb](./VB/WinApp7/Form1.vb))
 
 ## Documentation
 
