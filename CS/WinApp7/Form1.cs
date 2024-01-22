@@ -4,12 +4,9 @@ using DevExpress.XtraDiagram;
 using System.Data;
 using System.Linq;
 
-namespace WinApp7
-{
-    public partial class Form1 : DevExpress.XtraEditors.XtraForm
-    {
-        public Form1()
-        {
+namespace WinApp7 {
+    public partial class Form1 : DevExpress.XtraEditors.XtraForm {
+        public Form1() {
             InitializeComponent();
             diagramControl1.CreateDocking();
             diagramControl1.CreateRibbon();
