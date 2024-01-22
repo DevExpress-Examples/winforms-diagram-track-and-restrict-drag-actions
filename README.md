@@ -3,26 +3,27 @@
 [![](https://img.shields.io/badge/Open_in_DevExpress_Support_Center-FF7200?style=flat-square&logo=DevExpress&logoColor=white)](https://supportcenter.devexpress.com/ticket/details/T1208174)
 [![](https://img.shields.io/badge/📖_How_to_use_DevExpress_Examples-e9f6fc?style=flat-square)](https://docs.devexpress.com/GeneralInformation/403183)
 <!-- default badges end -->
-# WinForms Diagram Control - How to track and restrict the drag action
 
-This example demonstrates how to restrict items dragging actions in the Diagram Control.
+# WinForms Diagram Control - Track and Restrict Drag Actions
 
-The DiagramControl allows you to use several events that are raised at different moments of time to customize or prohibit items dragging actions:
-1) `AddingNewItem` - this event is raised when a user drags a new item to the canvas.
-2) `BeforeItemsMoving` - this event is raised when a user initiates the items drag/move action. It allows you to customize the dragged items.
-3) `ItemsMoving` - this event is raised during the items drag/move action and allows you to restrict this action based on the stage, an item's new/old position and new/old parent.
+This example demonstrates how to restrict different drag actions in the [Diagram Control](https://docs.devexpress.com/WindowsForms/114833/controls-and-libraries/diagrams).
 
-This example demonstrates how to handle these events to implement similar restrictions:
+The `DiagramControl` allows you to use multiple events (raised at different moments) to customize or prohibit drag actions:
 
+* The [AddingNewItem](https://docs.devexpress.com/WindowsForms/DevExpress.XtraDiagram.DiagramControl.AddingNewItem) event is raised when a user drags a new item to the canvas.
+* The [BeforeItemsMoving](https://docs.devexpress.com/WindowsForms/DevExpress.XtraDiagram.DiagramControl.BeforeItemsMoving) event is raised when a user initiates the item drag/move action. This event allows you to customize dragged items.
+* The [DiagramControl.ItemsMoving](https://docs.devexpress.com/WindowsForms/DevExpress.XtraDiagram.DiagramControl.ItemsMoving) event is raised during the item drag/move action. This event allows you to restrict this action based on stage, item position, and item parent.
 
-1) You cannot drop the “Rectangle” and “Ellipse” shapes to the canvas;
-2) You cannot move the “Triangle” shape after you dropped it to the canvas;
-3) You cannot move the “RightTriangle” shape to a container if it contains at least one “RightTriangle” shape;
-4) You cannot drop the “Pentagon” shape near another shape.
+This example demonstrates how to handle these events to implement the following restrictions:
+
+* You cannot drop "Rectangle" and "Ellipse" shapes to the canvas.
+* You cannot move the "Triangle" shape after you drop it to the canvas.
+* You cannot move the "RightTriangle" shape to a container if it contains at least one "RightTriangle" shape.
+* You cannot drop the "Pentagon" shape near other shapes.
 
 ## Files to Review
 
-- [Form1.cs](./CS/WinApp7/Form1.cs) (VB: [Form1.vb](./VB/WinApp7/Form1.vb))
+- [Form1.cs](./CS/WinApp7/Form1.cs)
 
 ## Documentation
 
